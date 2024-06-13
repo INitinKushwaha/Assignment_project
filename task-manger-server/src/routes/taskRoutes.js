@@ -25,12 +25,11 @@ router.put('/:id', updateTask);
 // DELETE a task by ID
 router.delete('/:id', async (req, res) => {
     try {
-        const task = await Task.findById(req.params.id);
+        const task = await Task.findByIdAndDelete(req.params.id);
         if (!task) {
             return res.status(404).json({ message: 'Task not found' });
         }
 
-        await task.remove();
         res.json({ message: 'Task deleted successfully' });
     } catch (error) {
         console.error('Error deleting task:', error);

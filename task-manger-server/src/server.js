@@ -23,6 +23,9 @@ app.use(express.json());
 // Routes
 app.use('/api/tasks', taskRoutes);
 
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+})
 // Connect to MongoDB
 connectDB();
 

@@ -1,6 +1,6 @@
 // controllers/taskController.js
 
-import Task from '../models/task.js';
+import Task from './models/task.js';
 
 // Get all tasks
 export const getTasks = async (req, res) => {

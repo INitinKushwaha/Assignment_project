@@ -48,7 +48,7 @@ const App = () => {
             .catch(error => console.error(error));
     };
 
-    axios.post('assignment-project-omega.vercel.app')
+    axios.post('assignment-project-backend.vercel.app')
 
     return (
         <div className="App">

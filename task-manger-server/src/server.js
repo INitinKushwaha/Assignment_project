@@ -10,7 +10,12 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors(
+    {
+        origin : ["assignment-project-omega.vercel.app"],
+        methods: ["POST","GET"]
+    }
+));
 app.use(express.json());
 
 // Routes

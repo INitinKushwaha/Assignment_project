@@ -47,6 +47,8 @@ const App = () => {
             .catch(error => console.error(error));
     };
 
+    axios.post('assignment-project-omega.vercel.app')
+
     return (
         <div className="App">
             <TaskList onSelectTask={handleSelectTask} onNewTask={handleNewTask} />

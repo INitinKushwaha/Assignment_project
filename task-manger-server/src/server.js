@@ -12,7 +12,7 @@ const app = express();
 // Middleware
 app.use(cors(
     {
-        origin : ["assignment-project-omega.vercel.app"],
+        origin : ["https://assignment-project-frontend.vercel.app"],
         methods: ["POST","GET"]
     }
 ));

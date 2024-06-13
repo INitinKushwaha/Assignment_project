@@ -4,6 +4,7 @@ import TaskList from './components/TaskList';
 import TaskDetail from './components/TaskDetail';
 import TaskForm from './components/TaskForm';
 import './styles/styles.css';
+import axios from 'axios';
 
 const App = () => {
     const [selectedTaskId, setSelectedTaskId] = useState(null);

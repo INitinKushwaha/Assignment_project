@@ -2,8 +2,8 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import connectDB from './db/index.js';
-import taskRoutes from './routes/taskRoutes.js';
+import connectDB from './src/db/index.js';
+import taskRoutes from './src/routes/taskRoutes.js';
 
 dotenv.config();
 

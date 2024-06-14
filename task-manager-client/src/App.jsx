@@ -48,7 +48,7 @@ const App = () => {
             .catch(error => console.error(error));
     };
 
-   axios.post("https://assignment-project-puce.vercel.app/api/tasks")
+   
 
     return (
         <div className="App">

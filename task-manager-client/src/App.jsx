@@ -1,5 +1,5 @@
 // src/App.jsx
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import TaskList from './components/TaskList';
 import TaskDetail from './components/TaskDetail';
 import TaskForm from './components/TaskForm';

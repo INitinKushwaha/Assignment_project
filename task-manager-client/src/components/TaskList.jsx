@@ -1,5 +1,5 @@
 // src/components/TaskList.jsx
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const TaskList = ({ onSelectTask, onNewTask }) => {
@@ -23,13 +23,13 @@ const TaskList = ({ onSelectTask, onNewTask }) => {
     return (
         <div>
             <button onClick={onNewTask}>New Task</button>
-            <ul>
+            <div>
                 {tasks.map(task => (
-                    <li key={task._id} onClick={() => onSelectTask(task._id)}>
+                    <div className ="item"key={task._id} onClick={() => onSelectTask(task._id)}>
                         {task.title}
-                    </li>
+                    </div>
                 ))}
-            </ul>
+            </div>
         </div>
     );
 };

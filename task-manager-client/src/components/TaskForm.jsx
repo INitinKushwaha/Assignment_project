@@ -1,5 +1,5 @@
 // src/components/TaskForm.jsx
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const TaskForm = ({ taskId, onSave, onCancel }) => {
@@ -31,7 +31,7 @@ const TaskForm = ({ taskId, onSave, onCancel }) => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className ="form"onSubmit={handleSubmit}>
             <input
                 type="text"
                 name="title"
@@ -51,9 +51,10 @@ const TaskForm = ({ taskId, onSave, onCancel }) => {
                 name="dueDate"
                 value={task.dueDate}
                 onChange={handleChange}
-            />
+            /><div style={{marginTop:"10px"}}>
             <button type="submit">Save</button>
             <button type="button" onClick={onCancel}>Cancel</button>
+            </div>
         </form>
     );
 };

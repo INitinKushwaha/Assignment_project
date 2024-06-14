@@ -1,7 +1,7 @@
 // src/components/TaskDetail.jsx
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
-import api from '../axiosConfig';
+
 
 const TaskDetail = ({ taskId, onEditTask, onDeleteTask }) => {
     const [task, setTask] = useState(null);

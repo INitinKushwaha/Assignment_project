@@ -5,22 +5,29 @@
     box-sizing: border-box;
 }
 
-/* Body styling */
+/* General body styling */
 body {
+    background-color: #0e0d0d;
+    color: #fff;
     font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
     line-height: 1.6;
 }
 
 /* Container for the whole application */
 .App {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    max-width: 100%;
+    margin: auto;
+    padding: 5px;
+    background-color: #332f2f;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    margin: 10px;
+    background: linear-gradient(to right, #2563eb, #ec4899, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Buttons */
@@ -30,20 +37,21 @@ button {
     background-color: #007bff;
     color: #fff;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 20px;
     transition: background-color 0.3s ease;
     margin-left: 10px;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #0c0cf0;
 }
 
 /* Form styling */
 form {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+    margin-right: 2px;
 }
 
 label {
@@ -51,18 +59,16 @@ label {
     margin-bottom: 8px;
 }
 
-input[type='text'],
-textarea {
+input[type='text'], textarea {
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #f0ebeb;
     border-radius: 4px;
     font-size: 16px;
     transition: border-color 0.3s ease;
 }
 
-input[type='text']:focus,
-textarea:focus {
+input[type='text']:focus, textarea:focus {
     outline: none;
     border-color: #007bff;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
@@ -86,13 +92,13 @@ textarea:focus {
 .task h3 {
     margin-bottom: 10px;
     font-size: 20px;
-    color: #333;
+    color: #f7f2f2;
 }
 
 .task p {
     margin-bottom: 8px;
     font-size: 16px;
-    color: #666;
+    color: #f3eeee;
 }
 
 .task .actions {
@@ -124,19 +130,21 @@ textarea:focus {
         font-size: 14px;
     }
 }
-.item{
+
+/* Flex containers for items and form */
+.item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     border-bottom: 1px solid #ccc;
-
 }
-.form{
+
+.form {
     display: flex;
     justify-content: space-between;
-    align-items: start;
-    padding: 10px;
+    align-items: center;
+    padding: 8px;
     border-bottom: 1px solid #ccc;
-    width: 100%;
+    width: auto;
 }

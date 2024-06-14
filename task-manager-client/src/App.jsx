@@ -51,6 +51,10 @@ const App = () => {
    
 
     return (
+        <div>
+            <h1>
+                Task management Application
+            </h1>
         <div className="App">
             <TaskList onSelectTask={handleSelectTask} onNewTask={handleNewTask} />
             {selectedTaskId && (
@@ -67,6 +71,7 @@ const App = () => {
                     onCancel={handleCancel}
                 />
             )}
+        </div>
         </div>
     );
 };
